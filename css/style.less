@@ -1,0 +1,102 @@
+@yellowOne: #FDE688;
+@yellowTwo: #FFFFFF;
+@purple: #FF70C3;
+@white: #FFFFFF;
+
+
+html,body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+p{
+	font-size: 16px;
+	font-family: maven pro;
+}
+
+.container
+{
+	max-width: 900px;
+}
+
+.card{
+	width: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.card-third
+{
+	.card;
+	min-height: 33%;
+
+}
+
+.title
+{
+	text-transform: uppercase;;
+	font-size: 150px;
+	text-align: center;
+	color: @white;
+	margin-bottom: -20px;
+}
+.title-cali
+{
+	z-index: 1;
+	font-size: 62px;
+	position: relative;
+	top: -50px;
+	right: -280px;
+	color:#FF70C3;
+	text-align: center;
+	-webkit-transform:rotate(-6deg);
+	font-family: Great Vibes;
+	color: @purple;
+
+}
+.subtitle{
+	position: relative;
+	top: -90px;
+
+	border-top-style:solid;
+	border-top-color: white;
+	border-top-width: 20px;
+
+	border-bottom-style:solid;
+	border-bottom-color: white;
+	border-bottom-width: 20px;
+
+	margin-bottom: -40px;
+
+	h2{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 65px;
+	color: @white;
+	}
+}
+
+.img-green{
+	-webkit-filter: hue-rotate(40deg) contrast(130%) saturate(1000%);
+}
+.img-blue{
+	-webkit-filter: hue-rotate(165deg) contrast(130%) saturate(1000%);
+}
+.img-purple{
+	-webkit-filter: hue-rotate(-125deg) contrast(130%) saturate(1000%);
+}
+
+#one{
+	.card;
+	color: @purple;
+	background-color: @yellowOne;
+}
+
+#two{
+	.card-third;
+	background-color: @yellowTwo;
+}
