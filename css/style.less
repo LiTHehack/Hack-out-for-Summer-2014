@@ -1,5 +1,5 @@
-@yellowOne: #FDE688;
-@yellowTwo: #FFFFFF;
+@yellowOne: #FCE17A;
+@yellowTwo: #FDE688;
 @purple: #FF70C3;
 @white: #FFFFFF;
 
@@ -36,13 +36,27 @@ p{
 
 }
 
+.card-half
+{
+	.card;
+	min-height: 50%;
+
+}
+
 .title
 {
-	text-transform: uppercase;;
-	font-size: 150px;
+	text-transform: uppercase;
 	text-align: center;
 	color: @white;
 	margin-bottom: -20px;
+	font-size: 150px;
+
+	@media only screen and (max-width:991px) {
+		font-size: 120px;			
+	}
+	@media only screen and (max-width:666px) {
+		font-size: 78px;			
+	}
 }
 .title-cali
 {
@@ -56,6 +70,9 @@ p{
 	-webkit-transform:rotate(-6deg);
 	font-family: Great Vibes;
 	color: @purple;
+	@media only screen and (max-width:991px) {
+		right: -170px;
+	}
 
 }
 .subtitle{
@@ -91,12 +108,42 @@ p{
 }
 
 #one{
-	.card;
+	.card-half;
 	color: @purple;
-	background-color: @yellowOne;
+	background-image: url("../img/1.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 #two{
 	.card-third;
-	background-color: @yellowTwo;
+	background-color: @white;
+}
+
+#three{
+	.card-half;
+	color: @purple;
+	background-image: url("../img/2.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+}
+
+#four{
+	.card-half;
+	background-image: url("../img/3.png");
+	background-size: 100%;
+	background-repeat: no-repeat;	
+}
+
+#five{
+	.card-third;
+	background-color: @white;	
+}
+
+#six{
+	.card-half;
+	background-image: url("../img/4.png");
+	background-size: 100%;
+	background-repeat: no-repeat;	
 }
