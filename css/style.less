@@ -46,22 +46,22 @@ p{
 .title
 {
 	text-transform: uppercase;
+	font-size: 12em;
 	text-align: center;
 	color: @white;
 	margin-bottom: -20px;
-	font-size: 150px;
-
-	@media only screen and (max-width:991px) {
-		font-size: 120px;			
+	
+	@media screen and(max-width:950px) {
+		font-size: 8em;
 	}
-	@media only screen and (max-width:666px) {
-		font-size: 78px;			
+	@media screen and(max-width:630px) {
+		font-size: 4em;
 	}
 }
 .title-cali
 {
 	z-index: 1;
-	font-size: 62px;
+	font-size: 5em;
 	position: relative;
 	top: -50px;
 	right: -280px;
@@ -70,8 +70,17 @@ p{
 	-webkit-transform:rotate(-6deg);
 	font-family: Great Vibes;
 	color: @purple;
-	@media only screen and (max-width:991px) {
-		right: -170px;
+
+	@media screen and(max-width:950px) {
+		font-size: 4em;
+		top: -40px;
+		right: -150px;
+	}
+
+	@media screen and(max-width:630px) {
+		font-size: 2em;
+		top: -20px;
+		right: -90px;
 	}
 
 }
@@ -89,11 +98,34 @@ p{
 
 	margin-bottom: -40px;
 
+	@media screen and(max-width: 950px) {
+		top: -70px;
+		border-top-width: 15px;
+		border-bottom-width: 15px;
+	}
+	@media screen and(max-width:630px) {
+		top: -40px;
+		border-top-width: 10px;
+		border-bottom-width: 10px;
+	}
+
+
 	h2{
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 65px;
+	font-size: 4em;
 	color: @white;
+
+	@media screen and(max-width:950px) {
+		font-size: 3em;
+		
+	}
+
+	@media screen and(max-width:630px) {
+		font-size: 2em;
+		
+	}
+
 	}
 }
 
@@ -108,42 +140,21 @@ p{
 }
 
 #one{
-	.card-half;
+	.card;
 	color: @purple;
-	background-image: url("../img/1.png");
-	background-size: 100%;
-	background-repeat: no-repeat;
+	background-color: @yellowOne;
 }
 
 #two{
 	.card-third;
-	background-color: @white;
+	background-color: @yellowTwo;
 }
 
-#three{
-	.card-half;
-	color: @purple;
-	background-image: url("../img/2.png");
-	background-size: 100%;
-	background-repeat: no-repeat;
-
+div#signup{
+	text-align: center;
+	margin: 20px 0;
 }
 
-#four{
-	.card-half;
-	background-image: url("../img/3.png");
-	background-size: 100%;
-	background-repeat: no-repeat;	
-}
-
-#five{
-	.card-third;
-	background-color: @white;	
-}
-
-#six{
-	.card-half;
-	background-image: url("../img/4.png");
-	background-size: 100%;
-	background-repeat: no-repeat;	
+div.img-bar{
+	margin: 20px 0;
 }
