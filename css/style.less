@@ -24,7 +24,7 @@ p{
 	width: 100%;
 	min-height: 100%;
 	margin: 0 auto;
-	padding: 0;
+	padding: 20px;
 	overflow: hidden;
 	position: relative;
 }
@@ -69,6 +69,7 @@ p{
 	text-align: center;
 	-webkit-transform:rotate(-6deg);
 	font-family: Great Vibes;
+	text-shadow: 1px 1px 10px #000;
 	color: @purple;
 
 	@media screen and(max-width:950px) {
@@ -86,7 +87,7 @@ p{
 }
 .subtitle{
 	position: relative;
-	top: -90px;
+	top: -130px;
 
 	border-top-style:solid;
 	border-top-color: white;
@@ -99,7 +100,7 @@ p{
 	margin-bottom: -40px;
 
 	@media screen and(max-width: 950px) {
-		top: -70px;
+		top: -100px;
 		border-top-width: 15px;
 		border-bottom-width: 15px;
 	}
@@ -129,32 +130,38 @@ p{
 	}
 }
 
-.img-green{
-	-webkit-filter: hue-rotate(40deg) contrast(130%) saturate(1000%);
-}
-.img-blue{
-	-webkit-filter: hue-rotate(165deg) contrast(130%) saturate(1000%);
-}
-.img-purple{
-	-webkit-filter: hue-rotate(-125deg) contrast(130%) saturate(1000%);
-}
-
 #one{
-	.card;
-	color: @purple;
-	background-color: @yellowOne;
+	.card-half;
+	color: @white;
+	background:
+	    linear-gradient(
+      rgba(255, 205, 0, 0.1), 
+      rgba(255, 205, 0, 0.45)
+    ),
+	url("../img/stryk.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #two{
 	.card-third;
-	background-color: @yellowTwo;
+	background-color: @white;
 }
 
 div#signup{
 	text-align: center;
 	margin: 20px 0;
+
+	small{
+		color:@white;
+		text-shadow: 1px 1px 4px #000;
+	}
 }
 
 div.img-bar{
 	margin: 20px 0;
+}
+
+img.img-circle{
+	padding: 10px;
 }
