@@ -50,8 +50,8 @@ p{
 	text-align: center;
 	color: @white;
 	margin-bottom: -20px;
-	
-	@media screen and(max-width:950px) {
+
+	@media screen and(max-width:990px) {
 		font-size: 8em;
 	}
 	@media screen and(max-width:630px) {
@@ -119,12 +119,12 @@ p{
 
 	@media screen and(max-width:950px) {
 		font-size: 3em;
-		
+
 	}
 
 	@media screen and(max-width:630px) {
 		font-size: 2em;
-		
+
 	}
 
 	}
@@ -135,7 +135,7 @@ p{
 	color: @white;
 	background:
 	    linear-gradient(
-      rgba(255, 205, 0, 0.1), 
+      rgba(255, 205, 0, 0.1),
       rgba(255, 205, 0, 0.45)
     ),
 	url("../img/stryk.jpg");
@@ -148,14 +148,23 @@ p{
 	background-color: @white;
 }
 
+#third{
+	.card-third;
+	color: @white;
+	background:
+	    linear-gradient(
+      rgba(255, 112, 195, 0.1),
+      rgba(255, 112, 195, 0.45)
+    ),
+	url("http://placekitten.com/1000/1000");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 div#signup{
+	text-shadow: 1px 1px 8px #000;
 	text-align: center;
 	margin: 20px 0;
-
-	small{
-		color:@white;
-		text-shadow: 1px 1px 4px #000;
-	}
 }
 
 div.img-bar{
