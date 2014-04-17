@@ -24,23 +24,27 @@
       <h1 class="title-cali">For Summer</h1>
 
       <div class="subtitle">
-        <h2>Norrköping 24 maj 2014</h2>      
+        <h2>Norrköping 24 maj 2014</h2>
       </div>
-      
+
       <div id="signup">
-        <h3>Sign up <small>for summer</small></h3>
-        <form
+        <h2>Are you read to Hack Out For Summer?</h2>
+        <h3>Join us at Campus Norrköping and hack away</h3>
+        <!-- <h3>Sign up <small>for summer</small></h3> -->
+        <!--<form
           role="form"
           class="form-inline"
           action="https://docs.google.com/a/student.liu.se/forms/d/1nZYG70o4YLFD3Vl7Y6NqvMGHEcImpgQ00s-6rtnXdl8/formResponse"
           method="POST"
           id="signup">
-          
+
           <div class="form-group">
             <input id="email" class="form-control" placeholder="LiU-mail" type="email" name="entry.451547332">
           </div>
           <button type="submit" class="btn btn-default">Sign up!</button>
-        </form>
+        </form>-->
+        <a href="#third" class="smoothscroll">
+        <button class="btn btn-default btn-lg" data-target="#third">Sign up below!</button></a>
       </div>
       <div class="row">
         <p class="text-center">
@@ -53,25 +57,66 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-offset-3 col-sm-6">
-          <h3>
-            Vi ska hacka, vi ska knacka, vi ska koda som ekorrar på kokain.
-          </h3>
+          <p>
+            'Hack out for Summer' is all about having one last, great hackaton before we take a vacation from our keyboards and head out into the summer sun to relax and think of something else for a while.
+          </p>
+          <p>But, it's also meant to prepare you for the summer... (More information to come soon!)</p>
+
+          <p>The hack will take place in "Färgeriet" in Campus Norrköping. The day is finished off at Visualiseringscenter C with Prize ceremony with beers and a buffé</p>
+
+          <p> We will then head for "Trappan" and party all night long at 'Töm &amp; Glöm'</p>
+        </div>
+      </div>
+      <div class="row img-bar hidden-xs">
+          <div class="col-sm-offset-3 col-sm-2"><img class="img-responsive img-circle" src="http://placekitten.com/401/400/"></div>
+          <div class="col-sm-2"><img class="img-responsive img-circle" src="http://placekitten.com/402/401/"></div>
+          <div class="col-sm-2"><img class="img-responsive img-circle" src="http://placekitten.com/400/400/"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="third">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <h2>Registration</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <p> In the form below you'll be able to register your team to 'Hack out for summer 2014'. Unfortunately, you can't register as an individual since we won't be able to find a team for you.
+          </p>
+
+          <p>We also have a <h3>Recommended team:</h3></p>
+
+          <dl class="dl-horizontal">
+            <dt>Programmer</dt>
+            <dd>Hacks stuff and makes the magic you need to make sheit work</dd>
+            <dt>Design/UX</dt>
+            <dd>Design stuff and knows how ppl think.</dd>
+          </dl>
+
+          <p><emphasize>Who Can participate?</emphasize> - Anyone! This hack is for everyone, no matter your programming skills</p>
           <p class="text-center">
-            Det ska vi göra.
+            <button class="btn btn-default btn-lg" data-toggle="modal" data-target=".bs-example-modal-lg">Sign up Now!</button>
+            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <iframe src="https://docs.google.com/forms/d/1nZYG70o4YLFD3Vl7Y6NqvMGHEcImpgQ00s-6rtnXdl8/viewform?embedded=true" width="300" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                </div>
+              </div>
+            </div>
           </p>
         </div>
-        <div class="col-md-6">
-        </div>
-      </div>
-      <div class="row img-bar">
-          <div class="col-md-offset-3 col-md-2"><img class="img-responsive img-circle" src="http://placekitten.com/401/400/"></div>
-          <div class="col-md-2"><img class="img-responsive img-circle" src="http://placekitten.com/402/401/"></div>
-          <div class="col-md-2"><img class="img-responsive img-circle" src="http://placekitten.com/400/400/"></div>
-      </div>
-      <div class="row img-bar">
-          <div class="col-md-offset-1 col-md-5"><img class="img-responsive" src="http://lithehack.se/web/img/logo.png"></div>
-          <div class="col-md-offset-1 col-md-5"><img class="img-responsive" src="img/spotify.png"></div>
+    </div>
+  </section>
 
+  <section id="fourth">
+    <div class="container">
+      <h2>Organizers</h2>
+      <div class="row img-bar">
+          <div class="col-sm-offset-1 col-sm-5"><img class="img-responsive" src="http://lithehack.se/web/img/logo.png"></div>
+          <div class="col-sm-offset-1 col-sm-5"><img class="img-responsive" src="img/spotify.png"></div>
       </div>
     </div>
   </section>
@@ -79,6 +124,9 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
+  <script src="js/jquery.smooth-scroll.min.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>
