@@ -1,0 +1,423 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="3812" measuredH="1040" mockupW="3802" mockupH="1018">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="10" y="22" w="749" h="499" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Hack%20Out%20for%20Summer%0Ahttp%3A//hackoutforsummer.se</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="191" y="164" w="-1" h="-1" measuredW="368" measuredH="80" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>72</size>
+        <text>HACK%20OUT</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::SubTitle" x="161" y="286" w="-1" h="-1" measuredW="428" measuredH="43" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>40</size>
+        <text>NORRK%D6PING%2024%20MAJ</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::SubTitle" x="447" y="250" w="-1" h="-1" measuredW="135" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16711935</color>
+        <italic>true</italic>
+        <text>For%20Summer</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="47" y="126" w="-1" h="-1" measuredW="65" measuredH="29" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%23hofs2014</text>
+        <textOrientation>slanted</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Arrow" x="19" y="105" w="120" h="70" measuredW="150" measuredH="100" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>1</backgroundAlpha>
+        <color>16711935</color>
+        <curvature>0</curvature>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>false</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Arrow" x="147" y="231" w="413" h="10" measuredW="150" measuredH="100" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>1</backgroundAlpha>
+        <color>0</color>
+        <curvature>0</curvature>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>false</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::LinkBar" x="417" y="107" w="-1" h="-1" measuredW="327" measuredH="19" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>6710886</color>
+        <selectedIndex>0</selectedIndex>
+        <text>Home%2C%20What%2C%20How%2C%20Where%2C%20Sign%20Up%2C%20Partners</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Label" x="132" y="106" w="-1" h="-1" measuredW="166" measuredH="21" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13576743</color>
+        <text>Typ%20som%20%22fork%20me%20on%20github%22</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Paragraph" x="176" y="352" w="394" h="105" measuredW="275" measuredH="80" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>Are%20you%20read%20to%20Hack%20Out%20For%20Summer%3F%0A%20%0AAre%20you%20ready%20to%20build%20your%20ultimate%20summer%20app%3F%0A%20%0AJoin%20us%20at%20Norrk%F6ping%27s%20very%20first%20student%20driven%20hackahton%2C%20%0Ait%20is%20going%20to%20be%20magic%20epic%20%23hofs2014</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="768" y="22" w="749" h="499" measuredW="450" measuredH="400" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Hack%20Out%20for%20Summer%0Ahttp%3A//hackoutforsummer.se</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::LinkBar" x="1175" y="107" w="-1" h="-1" measuredW="327" measuredH="19" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>6710886</color>
+        <selectedIndex>1</selectedIndex>
+        <text>Home%2C%20What%2C%20How%2C%20Where%2C%20Sign%20Up%2C%20Partners</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="798" y="111" w="-1" h="-1" measuredW="185" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13576743</color>
+        <text>Scrolla%20ner%E5t%20f%F6r%20att%20hamna%20h%E4r</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::SubTitle" x="1086" y="155" w="-1" h="-1" measuredW="112" measuredH="43" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>40</size>
+        <text>WHAT</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Paragraph" x="831" y="213" w="664" h="230" measuredW="275" measuredH="80" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>%20%0AHack%20out%20for%20summer%20is%20an%20initiative%20by%20Spotify%20Street%20Team%20and%20LiTeHack.%20It%20is%20a%20100%25%20non%20profit%20event%20by%20students%20for%20students.%20It%20is%20also%20100%20%25%20free%20to%20particiapte.%20All%20we%20ask%20from%20you%20is%20a%20happy%20mode%20an%20interest%20for%20concept%2C%20design%20and/or%20tech.%20%0A%20%0AWe%20want%20all%20students%20to%20be%20able%20to%20particiapate%20in%20this%20great%20day%20of%20innovation%2C%20inspiration%20and%20learning.%20Therefore%20we%20are%20competing%20in%203%20categories.%20So%20you%20absolutely%20do%20not%20have%20to%20be%20Zlatan%20at%20programming%20to%20join.%0A%20%0AOur%20aim%20with%20this%2C%20except%20having%20fun%2C%20is%20to%20introduce%20you%20to%20the%20tools%20and%20possibilities%20that%20are%20right%20out%20there%20waiting%20for%20you%20to%20build%20cool%20stuff%2C%20you%20just%20haven%27t%20started%20because%20you%20didn%27t%20know%20they%20existed.%20So%20make%20an%20investment%20in%20yourself%2C%20come%20and%20hack%20with%20us%20and%20find%20new%20cool%20areas%20connected%20to%20what%20you%20study.%20Then%20go%20nuts%20on%20cool%20projects%20over%20the%20summer.%20YAnd%20hopefully%20you%27ll%20come%20back%20in%20September%20more%20motivated%20than%20ever.</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="1533" y="22" w="749" h="499" measuredW="450" measuredH="400" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Hack%20Out%20for%20Summer%0Ahttp%3A//hackoutforsummer.se</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::LinkBar" x="1940" y="105" w="-1" h="-1" measuredW="327" measuredH="19" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>6710886</color>
+        <selectedIndex>2</selectedIndex>
+        <text>Home%2C%20What%2C%20How%2C%20Where%2C%20Sign%20Up%2C%20Partners</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::SubTitle" x="1851" y="153" w="-1" h="-1" measuredW="94" measuredH="43" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>40</size>
+        <text>HOW</text>
+      </controlProperties>
+    </control>
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::Arrow" x="936" y="199" w="413" h="10" measuredW="150" measuredH="100" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>1</backgroundAlpha>
+        <color>0</color>
+        <curvature>0</curvature>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>false</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::Arrow" x="1701" y="199" w="413" h="10" measuredW="150" measuredH="100" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>1</backgroundAlpha>
+        <color>0</color>
+        <curvature>0</curvature>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>false</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::IconLabel" x="1577" y="307" w="-1" h="-1" measuredW="84" measuredH="63" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>INTRO%20TALKS</text>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::IconLabel" x="1684" y="307" w="-1" h="-1" measuredW="71" measuredH="63" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>HACK%20AWAY</text>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::IconLabel" x="1792" y="380" w="-1" h="-1" measuredW="48" measuredH="63" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>TECH</text>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::IconLabel" x="1792" y="307" w="-1" h="-1" measuredW="49" measuredH="63" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>DESIGN</text>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::IconLabel" x="1784" y="232" w="-1" h="-1" measuredW="64" measuredH="63" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>CONCEPT</text>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Arrow" x="1650" y="325" w="41" h="10" measuredW="150" measuredH="100" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>0</curvature>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::Arrow" x="1751" y="324" w="41" h="10" measuredW="150" measuredH="100" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>0</curvature>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Arrow" x="1743" y="380" w="41" h="26" measuredW="150" measuredH="100" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>0</curvature>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Arrow" x="1743" y="259" w="41" h="46" measuredW="150" measuredH="100" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>0</curvature>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Arrow" x="1851" y="323" w="51" h="10" measuredW="150" measuredH="100" zOrder="29" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>0</curvature>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::Arrow" x="1851" y="375" w="51" h="36" measuredW="150" measuredH="100" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>0</curvature>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::Arrow" x="1851" y="253" w="51" h="37" measuredW="150" measuredH="100" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>0</curvature>
+        <direction>top</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::IconLabel" x="1925" y="297" w="-1" h="-1" measuredW="48" measuredH="63" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>PITCH</text>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::IconLabel" x="2053" y="297" w="-1" h="-1" measuredW="67" measuredH="63" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>FEEDBACK</text>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::IconLabel" x="2195" y="297" w="-1" h="-1" measuredW="61" measuredH="63" zOrder="34" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>WINNERS</text>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::Arrow" x="1987" y="323" w="51" h="10" measuredW="150" measuredH="100" zOrder="35" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>0</curvature>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="2129" y="313" w="51" h="10" measuredW="150" measuredH="100" zOrder="36" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>0</curvature>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Label" x="1548" y="126" w="-1" h="-1" measuredW="471" measuredH="21" zOrder="37" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13576743</color>
+        <text>Kan%20vi%20l%F6sa%20n%E5gra%20schyssta%20popups%20n%E4r%20man%20trycker%20p%E5%20iconerna%20vore%20det%20grymt</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="2297" y="22" w="749" h="499" measuredW="450" measuredH="400" zOrder="38" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Hack%20Out%20for%20Summer%0Ahttp%3A//hackoutforsummer.se</text>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::SubTitle" x="2606" y="132" w="-1" h="-1" measuredW="144" measuredH="43" zOrder="39" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>40</size>
+        <text>WHERE</text>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Arrow" x="2456" y="178" w="413" h="10" measuredW="150" measuredH="100" zOrder="40" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>1</backgroundAlpha>
+        <color>0</color>
+        <curvature>0</curvature>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>false</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::Paragraph" x="2435" y="343" w="486" h="122" measuredW="275" measuredH="80" zOrder="41" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>08.15-08.30%3A%20%09%09Intro%20och%20Info%3A%20%09%09%09%28Strykbr%E4dan%29%0A08.30-09.30%3A%20%09%09Talks%09%09%09%09%28Strykbr%E4dan%29%0A09.30-17.00%3A%20%09%09Hack%20Away%09%09%09%28Strykbr%E4dan%29%0A17.30-19.30%3A%20%09%09Presentationer%09%09%09%28Visualiseringscenter%20C%29%0A19.30-21.30%3A%20%09%09Middag%20och%20Mingel%09%09%28Visualiseringscenter%20C%29%0A21.30-23.00%3A%20%09%09Vinnare%20+%20feedback%09%09%28Visualiseringscenter%20C%29%0A23.00-.........%3A%20%09%09T%F6m%20%26%20Gl%F6m%09%09%09%28Trappan%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::Paragraph" x="2339" y="202" w="665" h="122" measuredW="275" measuredH="80" zOrder="42" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>During%20the%20day%20we%20will%20be%20in%20the%20amazing%20spaces%20of%20Strykbr%E4dan.%20With%20whiteboard%20tables%2C%20big%20windows%20towards%20the%20river%20and%20lots%20of%20space%20for%20the%20teams%20we%20think%20it%20is%20the%20best%20location%20possible%20to%20host%20this.%0A%20%0ADuring%20the%20evening%20we%20will%20be%20in%20the%20Bistro%20of%20Visualiseringscentret%20C.%20%0AWe%20will%20wine%2C%20dine%20and%20enjoy%20each%20others%20presentations%20and%20comapny.%0A%20%0AIf%20you%20are%20up%20for%20dancing%20the%20night%20away%20we%20will%20head%20to%20Trappan%27s%20closing%20night%20%22T%F6m%20%26%20Gl%F6m%22%20to%20properly%20welcome%20summer.</text>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="3063" y="22" w="749" h="499" measuredW="450" measuredH="400" zOrder="43" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Hack%20Out%20for%20Summer%0Ahttp%3A//hackoutforsummer.se</text>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::LinkBar" x="2704" y="105" w="-1" h="-1" measuredW="327" measuredH="19" zOrder="44" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>6710886</color>
+        <selectedIndex>3</selectedIndex>
+        <text>Home%2C%20What%2C%20How%2C%20Where%2C%20Sign%20Up%2C%20Partners</text>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::SubTitle" x="3372" y="142" w="-1" h="-1" measuredW="163" measuredH="43" zOrder="45" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>40</size>
+        <text>SIGN%20UP</text>
+      </controlProperties>
+    </control>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::Arrow" x="3222" y="188" w="413" h="10" measuredW="150" measuredH="100" zOrder="46" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>1</backgroundAlpha>
+        <color>0</color>
+        <curvature>0</curvature>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>false</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::LinkBar" x="3470" y="105" w="-1" h="-1" measuredW="327" measuredH="19" zOrder="47" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>6710886</color>
+        <selectedIndex>4</selectedIndex>
+        <text>Home%2C%20What%2C%20How%2C%20Where%2C%20Sign%20Up%2C%20Partners</text>
+      </controlProperties>
+    </control>
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::Paragraph" x="3116" y="209" w="640" h="159" measuredW="275" measuredH="80" zOrder="48" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>We%20recommend%20teams%20of%203%20-%205%20people%2C%20prefferably%20from%20diffrent%20programs%20with%20different%20skills.%20You%27ll%20need%20a%20cross%20functional%20team%20to%20build%20the%20most%20epic%20summer%20app%2C%20right%3F%20Pick%20one%20person%20responsible%20for%20the%20communications%20with%20us%20and%20let%20that%20person%20sign%20your%20team%20up%20right%20here.%0A%20%0ADon%27t%20have%20a%20team%20but%20are%20really%20keen%20to%20join%20hofs2014%3F%20Post%20on%20the%20events%20Facebook%20wall%20and%20we%27ll%20try%20to%20mix%20%26%20match%20to%20put%20you%20in%20a%20great%20team.%0A%20%0ASo%2C%20what%20are%20you%20waiting%20for%3F%20%0AJoin%20epic%2C%20magic%2C%20%23hofs2014</text>
+      </controlProperties>
+    </control>
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::Button" x="3388" y="370" w="-1" h="-1" measuredW="115" measuredH="27" zOrder="49" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>LiTeHack%20Magic</text>
+      </controlProperties>
+    </control>
+    <control controlID="54" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="3063" y="541" w="749" h="499" measuredW="450" measuredH="400" zOrder="50" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Hack%20Out%20for%20Summer%0Ahttp%3A//hackoutforsummer.se</text>
+      </controlProperties>
+    </control>
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::SubTitle" x="3313" y="679" w="-1" h="-1" measuredW="264" measuredH="43" zOrder="51" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>40</size>
+        <text>ORGANIZERS</text>
+      </controlProperties>
+    </control>
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::Arrow" x="3239" y="727" w="413" h="10" measuredW="150" measuredH="100" zOrder="52" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>1</backgroundAlpha>
+        <color>0</color>
+        <curvature>0</curvature>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>false</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::LinkBar" x="3463" y="627" w="-1" h="-1" measuredW="256" measuredH="19" zOrder="53" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>6710886</color>
+        <selectedIndex>4</selectedIndex>
+        <text>Home%2C%20What%2C%20How%2C%20Where%2C%20Sign%20Up</text>
+      </controlProperties>
+    </control>
+    <control controlID="58" controlTypeID="com.balsamiq.mockups::IconLabel" x="3291" y="755" w="-1" h="-1" measuredW="48" measuredH="63" zOrder="54" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Spotify</text>
+      </controlProperties>
+    </control>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::IconLabel" x="3529" y="755" w="-1" h="-1" measuredW="55" measuredH="63" zOrder="55" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>LiTeHack</text>
+      </controlProperties>
+    </control>
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::Label" x="3384" y="851" w="-1" h="-1" measuredW="123" measuredH="32" zOrder="56" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>24</size>
+        <text>PARTNERS</text>
+      </controlProperties>
+    </control>
+    <control controlID="61" controlTypeID="com.balsamiq.mockups::IconLabel" x="3174" y="898" w="-1" h="-1" measuredW="48" measuredH="63" zOrder="57" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>C</text>
+      </controlProperties>
+    </control>
+    <control controlID="62" controlTypeID="com.balsamiq.mockups::IconLabel" x="3291" y="898" w="-1" h="-1" measuredW="48" measuredH="63" zOrder="58" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>NOSP</text>
+      </controlProperties>
+    </control>
+    <control controlID="63" controlTypeID="com.balsamiq.mockups::IconLabel" x="3413" y="898" w="-1" h="-1" measuredW="48" measuredH="63" zOrder="59" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Demola</text>
+      </controlProperties>
+    </control>
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::IconLabel" x="3516" y="898" w="-1" h="-1" measuredW="115" measuredH="63" zOrder="60" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Innovationskontoret</text>
+      </controlProperties>
+    </control>
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::IconLabel" x="3692" y="898" w="-1" h="-1" measuredW="79" measuredH="63" zOrder="61" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>MT-sektionen</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
