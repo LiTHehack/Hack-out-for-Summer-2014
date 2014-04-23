@@ -130,7 +130,7 @@ p{
 	}
 }
 
-#one{
+section#home{
 	.card-half;
 	color: @white;
 	background:
@@ -143,12 +143,11 @@ p{
 	background-size: cover;
 }
 
-#two{
+section#what{
 	.card-third;
-	background-color: @white;
 }
 
-#third{
+section#how{
 	.card-third;
 	color: @white;
 	background:
@@ -160,8 +159,21 @@ p{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+section#where{
+	.card-third;
 
-div#signup{
+}
+section#signup{
+	.card-third;
+
+}
+
+section#organizers{
+
+	.card-half;
+}
+
+div.signup{
 	text-shadow: 1px 1px 8px #000;
 	text-align: center;
 	margin: 20px 0;
@@ -178,4 +190,18 @@ img.img-circle{
 div#eventguide
 {
 	margin-bottom: 45px;
+}
+
+div#hashtagbanner{
+	z-index: 2;
+	position: absolute;
+	top: 40px;
+	left: -200px;
+	text-align: center;
+	background-color: @purple;
+	-webkit-transform: rotate(-35deg);
+	width: 600px;
+	a{
+		color:@white;
+	}
 }
