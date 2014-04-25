@@ -117,16 +117,15 @@ p{
 	font-size: 4em;
 	color: @white;
 
-	@media screen and(max-width:950px) {
-		font-size: 3em;
+		@media screen and(max-width:950px) {
+			font-size: 3em;
 
-	}
+		}
 
-	@media screen and(max-width:630px) {
-		font-size: 2em;
+		@media screen and(max-width:630px) {
+			font-size: 2em;
 
-	}
-
+		}
 	}
 }
 
@@ -148,7 +147,7 @@ section#what{
 }
 
 section#how{
-	.card-third;
+	.card-half;
 	color: @white;
 	background:
 	    linear-gradient(
@@ -165,6 +164,15 @@ section#where{
 }
 section#signup{
 	.card-third;
+	color: @white;
+	background:
+	    linear-gradient(
+      rgba(255, 112, 195, 0.1),
+      rgba(255, 112, 195, 0.45)
+    ),
+	url("http://placekitten.com/3000/1000");
+	background-repeat: no-repeat;
+	background-size: cover;
 
 }
 
@@ -195,13 +203,30 @@ div#eventguide
 div#hashtagbanner{
 	z-index: 2;
 	position: absolute;
-	top: 40px;
-	left: -200px;
+	top: 115px;
+	left: -230px;
+
 	text-align: center;
 	background-color: @purple;
 	-webkit-transform: rotate(-35deg);
-	width: 600px;
-	a{
+	transform:rotate(-35deg);
+	width: 800px;
+	h3{
 		color:@white;
+		font-size: 3em;
+
 	}
+
+	@media screen and(max-width: 990px) {
+		top: 25px;
+		left: -300px;
+		h3{
+			font-size: 1.5em;
+		}
+	}
+	@media screen and(max-width:630px) {
+		top: 20px;
+		left: -330px;
+	}
+
 }
