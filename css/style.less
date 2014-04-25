@@ -24,7 +24,7 @@ p{
 	width: 100%;
 	min-height: 100%;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 40px;
 	overflow: hidden;
 	position: relative;
 }
@@ -173,7 +173,7 @@ a.whatTitle span{
 }
 
 section#home{
-	.card-half;
+	.card;
 	color: @white;
 	background:
 	    linear-gradient(
@@ -200,11 +200,30 @@ section#how{
 	url("http://placekitten.com/1000/1000");
 	background-repeat: no-repeat;
 	background-size: cover;
+
 }
 section#where{
 	.card-third;
 
 }
+
+h1.cardtitle{
+	position: relative;
+	left:-20px;
+	top:-20px;
+	-webkit-transform: rotate(-12deg);
+	transform:rotate(-12deg);
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px 0;
+	color: #000;
+	font-size: 4em;
+}
+
+h1.white{
+	color:@white;
+}
+
 section#signup{
 	.card-third;
 	color: @white;
@@ -222,6 +241,21 @@ section#signup{
 section#organizers{
 
 	.card-half;
+}
+
+section#menu{
+	color: @white;
+	text-shadow: 1px 1px 8px #000;
+
+	z-index: 2;
+	position:fixed;
+	top:0px;
+	right:0px;
+	margin: 15px 15px 0px 0px;
+	a{
+		text-shadow: 1px 1px 8px #000;
+		color: @white;
+	}
 }
 
 div.signup{
@@ -274,14 +308,6 @@ div#hashtagbanner{
 
 }
 
-.cf:after,
-.cf:before {
-	content: '';
-	display: table;
-}
-.cf:after {
-	clear: both;
-}
-.cf {
-	zoom: 1;
+.btn{
+	margin-top: 40px;
 }
