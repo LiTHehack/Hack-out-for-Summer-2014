@@ -130,7 +130,7 @@ p{
 }
 
 section#home{
-	.card-half;
+	.card;
 	color: @white;
 	background:
 	    linear-gradient(
@@ -162,6 +162,16 @@ section#where{
 	.card-third;
 
 }
+
+h1.cardtitle{
+	color: #000;
+	font-size: 6em;
+}
+
+h1.white{
+	color:@white;
+}
+
 section#signup{
 	.card-third;
 	color: @white;
@@ -179,6 +189,21 @@ section#signup{
 section#organizers{
 
 	.card-half;
+}
+
+section#menu{
+	color: @white;
+	text-shadow: 1px 1px 8px #000;
+
+	z-index: 2;
+	position:fixed;
+	top:0px;
+	right:0px;
+	margin: 15px 15px 0px 0px;
+	a{
+		text-shadow: 1px 1px 8px #000;
+		color: @white;
+	}
 }
 
 div.signup{
@@ -229,4 +254,8 @@ div#hashtagbanner{
 		left: -330px;
 	}
 
+}
+
+.btn{
+	margin-top: 40px;
 }
