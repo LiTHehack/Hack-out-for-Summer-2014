@@ -68,6 +68,8 @@ p{
 	right: -280px;
 	text-align: center;
 	-webkit-transform:rotate(-15deg);
+	transform: rotate(-15deg);
+
 	font-family: Great Vibes;
 
 	// (outline, shadow, shadow)
@@ -200,14 +202,17 @@ section#what{
 section#how{
 	.card-half;
 	color: @white;
-	background:
-	    linear-gradient(
-      rgba(255, 229, 137, .0),
-      rgba(255, 229, 137, .5)
-    ),
-	url("http://placekitten.com/1000/1000");
-	background-repeat: no-repeat;
-	background-size: cover;
+
+  background: lighten(@purple, 20%);
+
+  border-image: url(../img/brush-border.svg) 17 30 stretch;
+	
+
+  border-image-width: 40px;
+	border-image-outset: 20px;
+
+  border-left: 0;
+  border-right: 0;
 
 }
 section#where{
@@ -217,15 +222,14 @@ section#where{
 
 h1.cardtitle{
 	position: relative;
-	// left:-20px;
 	top:-20px;
 	-webkit-transform: rotate(-12deg);
 	transform:rotate(-12deg);
 	text-align: center;
-	text-transform: uppercase;
 	padding: 10px 0;
 	color: #000;
 	font-size: 4em;
+	font-family: Great Vibes;
 }
 
 h1.white{
