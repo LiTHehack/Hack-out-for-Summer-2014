@@ -153,11 +153,7 @@ span.whatArrow {
 }
 
 a.whatTitle {
-	color:
-	    linear-gradient(
-      rgba(255, 229, 137, .5),
-      rgba(255, 229, 137, .5)
-    );
+	color: @iconColor;
 	padding: 10px;
 	display: inline-block;
 	text-align: center;
@@ -167,6 +163,7 @@ a.whatTitle>p {
 	text-align: center;
 	color: black;
 	// width: 100px;
+	margin: 0px 0px 0px 0px;
 }
 
 a.whatTitle:hover {
@@ -313,11 +310,37 @@ div#hashtagbanner{
 	}
 	@media screen and(max-width:630px) {
 		top: 20px;
-		left: -330px;
+		left: -140px;
+		width: 400px;
+
 	}
 
+}
+div#schedule{
+	.row{
+		min-height: 40px;
+		.col-sm-4{
+			vertical-align: middle;
+		}
+	}
+
+	.row:nth-child(odd){
+		background: #ddd;
+	}
 }
 
 .btn{
 	margin-top: 40px;
+}
+
+.bigicon{
+	color:@iconColor;
+	text-align: center;
+	horizontal-align: middle;
+	font-size: 14em;
+}
+
+p {
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
