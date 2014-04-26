@@ -160,7 +160,11 @@ span.whatArrow {
 }
 
 a.whatTitle {
-	color: @iconColor;
+	color:
+	    linear-gradient(
+      rgba(255, 229, 137, .5),
+      rgba(255, 229, 137, .5)
+    );
 	padding: 10px;
 	display: inline-block;
 	text-align: center;
@@ -230,6 +234,10 @@ h1.cardtitle{
 	color: #000;
 	font-size: 4em;
 	font-family: Great Vibes;
+
+	@media screen and(max-width:630px) {
+		font-size: 2em;
+	}
 }
 
 h1.white{
