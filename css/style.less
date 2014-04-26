@@ -24,9 +24,10 @@ p{
 	width: 100%;
 	min-height: 100%;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 40px;
 	overflow: hidden;
 	position: relative;
+
 }
 
 .card-third
@@ -65,21 +66,28 @@ p{
 	position: relative;
 	top: -50px;
 	right: -280px;
-	color:#FF70C3;
 	text-align: center;
-	-webkit-transform:rotate(-6deg);
+	-webkit-transform:rotate(-15deg);
+	transform: rotate(-15deg);
+
 	font-family: Great Vibes;
-	text-shadow: 1px 1px 10px #000;
+
+	// (outline, shadow, shadow)
+	text-shadow: 
+		0px 0px 1px #000,
+		1px 1px 7.5px #000,
+		1px 1px 10px #000;
+	
 	color: @purple;
 
 	@media screen and(max-width:950px) {
 		font-size: 4em;
 		top: -40px;
-		right: -150px;
+		right: -175px;
 	}
 
 	@media screen and(max-width:630px) {
-		font-size: 2em;
+		font-size: 3em;
 		top: -20px;
 		right: -90px;
 	}
@@ -117,26 +125,74 @@ p{
 	font-size: 4em;
 	color: @white;
 
-	@media screen and(max-width:950px) {
-		font-size: 3em;
+		@media screen and(max-width:950px) {
+			font-size: 3em;
 
-	}
+		}
 
-	@media screen and(max-width:630px) {
-		font-size: 2em;
+		@media screen and(max-width:630px) {
+			font-size: 2em;
 
-	}
-
+		}
 	}
 }
 
+@iconColor: blue;
+div#eventguide {
+	text-align: center;
+}
+
+div#whatIcons .col-xs-1 {
+	// width: 7.2%;
+	float:none;
+  display:inline-block;
+  vertical-align:middle;
+  // text-align: center;
+}
+
+div#whatIcons .row {
+	width: 80px;
+	text-align: center;
+}
+
+span.whatArrow {
+
+}
+
+a.whatTitle {
+	color:
+	    linear-gradient(
+      rgba(255, 229, 137, .5),
+      rgba(255, 229, 137, .5)
+    );
+	padding: 10px;
+	display: inline-block;
+	text-align: center;
+}
+
+a.whatTitle>p {
+	text-align: center;
+	color: black;
+	// width: 100px;
+}
+
+a.whatTitle:hover {
+	text-decoration: none;
+	color: lighten(@iconColor, 10%);
+}
+
+a.whatTitle span{
+	font-size: 30pt;
+}
+
 section#home{
-	.card-half;
+	.card;
 	color: @white;
 	background:
 	    linear-gradient(
-      rgba(255, 205, 0, 0.1),
-      rgba(255, 205, 0, 0.45)
+      rgba(255, 229, 137, 0.2),
+      rgba(255, 229, 137, 0.2),
+      rgba(255, 229, 137, .65)
     ),
 	url("../img/stryk.jpg");
 	background-repeat: no-repeat;
@@ -148,29 +204,78 @@ section#what{
 }
 
 section#how{
-	.card-third;
+	.card-half;
 	color: @white;
-	background:
-	    linear-gradient(
-      rgba(255, 112, 195, 0.1),
-      rgba(255, 112, 195, 0.45)
-    ),
-	url("http://placekitten.com/1000/1000");
-	background-repeat: no-repeat;
-	background-size: cover;
+
+  background: lighten(@purple, 20%);
+
+  border-image: url(../img/brush-border.svg) 17 30 stretch;
+	
+
+  border-image-width: 40px;
+	border-image-outset: 20px;
+
+  border-left: 0;
+  border-right: 0;
+
 }
 section#where{
 	.card-third;
 
 }
+
+h1.cardtitle{
+	position: relative;
+	top:-20px;
+	-webkit-transform: rotate(-12deg);
+	transform:rotate(-12deg);
+	text-align: center;
+	padding: 10px 0;
+	color: #000;
+	font-size: 4em;
+	font-family: Great Vibes;
+
+	@media screen and(max-width:630px) {
+		font-size: 2em;
+	}
+}
+
+h1.white{
+	color:@white;
+}
+
 section#signup{
 	.card-third;
+	color: @white;
+	background:
+	    linear-gradient(
+      rgba(255, 229, 137, .0),
+      rgba(255, 229, 137, .5)
+    ),
+	url("http://placekitten.com/3000/1000");
+	background-repeat: no-repeat;
+	background-size: cover;
 
 }
 
 section#organizers{
 
 	.card-half;
+}
+
+section#menu{
+	color: @white;
+	text-shadow: 1px 1px 8px #000;
+
+	z-index: 2;
+	position:fixed;
+	top:0px;
+	right:0px;
+	margin: 15px 15px 0px 0px;
+	a{
+		text-shadow: 1px 1px 8px #000;
+		color: @white;
+	}
 }
 
 div.signup{
@@ -195,14 +300,35 @@ div#eventguide
 div#hashtagbanner{
 	z-index: 2;
 	position: absolute;
-	top: 40px;
-	left: -200px;
+	top: 115px;
+	left: -230px;
+
 	text-align: center;
 	background-color: @purple;
 	transform: rotate(-35deg);
 	-webkit-transform: rotate(-35deg);
-	width: 600px;
-	a{
+	transform:rotate(-35deg);
+	width: 800px;
+	h3{
 		color:@white;
+		font-size: 3em;
+
 	}
+
+	@media screen and(max-width: 990px) {
+		top: 25px;
+		left: -300px;
+		h3{
+			font-size: 1.5em;
+		}
+	}
+	@media screen and(max-width:630px) {
+		top: 20px;
+		left: -330px;
+	}
+
+}
+
+.btn{
+	margin-top: 40px;
 }
