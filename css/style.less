@@ -74,11 +74,11 @@ p{
 	font-family: Great Vibes;
 
 	// (outline, shadow, shadow)
-	text-shadow: 
+	text-shadow:
 		0px 0px 1px #000,
 		1px 1px 7.5px #000,
 		1px 1px 10px #000;
-	
+
 	color: @purple;
 
 	@media screen and(max-width:950px) {
@@ -161,11 +161,7 @@ span.whatArrow {
 }
 
 a.whatTitle {
-	color:
-	    linear-gradient(
-      rgba(255, 229, 137, .5),
-      rgba(255, 229, 137, .5)
-    );
+	color: @iconColor;
 	padding: 10px;
 	display: inline-block;
 	text-align: center;
@@ -175,6 +171,7 @@ a.whatTitle>p {
 	text-align: center;
 	color: black;
 	// width: 100px;
+	margin: 0px 0px 0px 0px;
 }
 
 a.whatTitle:hover {
@@ -234,7 +231,7 @@ h1.cardtitle{
 	font-family: Great Vibes;
 
 	@media screen and(max-width:630px) {
-		font-size: 2em;
+		font-size: 3em;
 	}
 }
 
@@ -302,6 +299,7 @@ div#hashtagbanner{
 
 	text-align: center;
 	background-color: @purple;
+	transform: rotate(-35deg);
 	-webkit-transform: rotate(-35deg);
 	transform:rotate(-35deg);
 	width: 800px;
@@ -320,11 +318,36 @@ div#hashtagbanner{
 	}
 	@media screen and(max-width:630px) {
 		top: 20px;
-		left: -330px;
+		left: -140px;
+		width: 400px;
+
 	}
 
+}
+div#schedule{
+	.row{
+		min-height: 40px;
+		.col-sm-4{
+			vertical-align: middle;
+		}
+	}
+
+	.row:nth-child(odd){
+		background: #ddd;
+	}
 }
 
 .btn{
 	margin-top: 40px;
+}
+
+.bigicon{
+	color:@iconColor;
+	text-align: center;
+	font-size: 8em;
+}
+
+p {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
