@@ -130,6 +130,49 @@ p{
 	}
 }
 
+@iconColor: black;
+div#eventguide {
+	text-align: center;
+}
+
+div#whatIcons .col-xs-1 {
+	// width: 7.2%;
+	float:none;
+  display:inline-block;
+  vertical-align:middle;
+  // text-align: center;
+}
+
+div#whatIcons .row {
+	width: 80px;
+	text-align: center;
+}
+
+span.whatArrow {
+
+}
+
+a.whatTitle {
+	color: @iconColor;
+	padding: 10px;
+	display: inline-block;
+	text-align: center;
+}
+
+a.whatTitle>p {
+	color: black;
+	// width: 100px;
+}
+
+a.whatTitle:hover {
+	text-decoration: none;
+	color: lighten(@iconColor, 10%);
+}
+
+a.whatTitle span{
+	font-size: 30pt;
+}
+
 section#home{
 	.card;
 	color: @white;
