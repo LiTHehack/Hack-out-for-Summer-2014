@@ -1,5 +1,6 @@
 @yellowOne: #FCE17A;
 @yellowTwo: #FDE688;
+@lightYellow: #FFE589; 
 @purple: #FF70C3;
 @white: #FFFFFF;
 
@@ -205,23 +206,20 @@ section#what{
 
 section#how{
 	.card-half;
-	color: @white;
+	color: black;
 
   background: lighten(@purple, 20%);
 
-  border-image: url(../img/brush-border.svg) 17 30 stretch;
-	
-
+  border-image: url(../img/brush-border-purple.svg) 17 30 stretch;
   border-image-width: 40px;
 	border-image-outset: 20px;
-
   border-left: 0;
   border-right: 0;
 
 }
 section#where{
 	.card-third;
-
+	margin-bottom: 40px;
 }
 
 h1.cardtitle{
@@ -246,16 +244,15 @@ h1.white{
 
 section#signup{
 	.card-third;
-	color: @white;
-	background:
-	    linear-gradient(
-      rgba(255, 229, 137, .0),
-      rgba(255, 229, 137, .5)
-    ),
-	url("http://placekitten.com/3000/1000");
-	background-repeat: no-repeat;
-	background-size: cover;
+	color: black;
 
+  background: @lightYellow;
+
+  border-image: url(../img/brush-border-yellow.svg) 22 29 stretch;
+  border-image-width: 28px;
+	border-image-outset: 28px;
+  border-left: 0;
+  border-right: 0;
 }
 
 section#organizers{
