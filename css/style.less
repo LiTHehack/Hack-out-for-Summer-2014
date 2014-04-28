@@ -13,7 +13,7 @@ html,body {
 
 p{
 	font-size: 16px;
-	font-family: maven pro;
+	font-family: 'Maven Pro', sans-serif;
 }
 
 .container
@@ -29,6 +29,9 @@ p{
 	overflow: hidden;
 	position: relative;
 
+	@media screen and(max-width:630px) {
+		padding: 10px;
+	}
 }
 
 .card-third
@@ -346,6 +349,23 @@ div#schedule{
 
 .btn{
 	margin-top: 40px;
+}
+
+#facebookbutton {
+	background-color: #4c66a4;
+	color: white;
+	text-shadow: 0 0 0;
+}
+
+#map {
+	height: 400px;
+	width: 100%;
+	margin: -15px 0 40px;
+
+	@media screen and(max-width:630px) {
+		// margin-left: -10px;
+		// margin-right: -10px;
+	}
 }
 
 .bigicon{
