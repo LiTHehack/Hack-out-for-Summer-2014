@@ -230,7 +230,7 @@ h1.cardtitle{
 	position: relative;
 	top:-20px;
 	-webkit-transform: rotate(-12deg);
-	transform:rotate(-12deg);
+	transform: rotate(-12deg);
 	text-align: center;
 	padding: 10px 0;
 	color: #000;
@@ -377,4 +377,61 @@ p {
 
 h1#partners {
 	margin-top: 75px;
+}
+
+
+/*****************************************************************
+ * Don't panic.
+ ****************************************************************/
+.dontpaniccard {
+	padding: 60px 0;
+}
+body.dontpanic {
+	h1, h2, h3 {
+		text-align: center;
+		font-family: 'Maven Pro', sans-serif;
+	}
+
+	.container {
+		max-width: 1200px;
+	}
+
+	header#top {
+		background: @lightYellow;
+		border-image: url(../img/brush-border-yellow.svg) 22 29 stretch;
+		border-image-width: 28px;
+		border-image-outset: 28px;
+		border-left: 0;
+		border-right: 0;
+
+		-ms-word-wrap: break-word;
+		word-wrap: break-word;
+
+		color: #3C3417;
+
+		h1 {
+			-webkit-transform: rotate(-12deg);
+			transform: rotate(-12deg);
+			text-align: center;
+			padding: 0;
+			font-family: Great Vibes;
+			font-size: 12em;
+
+			@media screen and(max-width:630px) {
+				font-size: 7em;
+				margin-bottom: 90px;
+			}
+		}
+		h3 {
+			margin: -60px 0 20px;
+			text-align: center;
+			font-family: 'Maven Pro', sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+		}
+	}
+
+	#calmdown, #tech, #inspiration {
+		.dontpaniccard;
+	}
 }
