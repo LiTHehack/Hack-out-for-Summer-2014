@@ -3,12 +3,12 @@ $(document).ready(function(){
 
 	$('#map').simplegmaps({
 		MapOptions: {
-			center: new google.maps.LatLng(58.589236, 16.179097),
+			// center: new google.maps.LatLng(58.589236, 16.179097),
 	        draggable: true,
 	        scrollwheel: false,
 	        streetViewControl: true,
 	        panControl: false,
-	        zoom: 3,
+	        zoom: 8,
 	        zoomControl: true,
 	        zoomControlOptions: {
 	            style: 'DEFAULT'
