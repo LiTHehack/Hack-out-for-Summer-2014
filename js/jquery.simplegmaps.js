@@ -55,6 +55,7 @@
 		try {
 			map.fitBounds(bounds);
 			map.setCenter(bounds.getCenter());
+			map.setZoom(map.getZoom()-1); // NOT DEFAULT
 		} catch (e) {} // Let's catch this possible error and do nothing about it. Noone will ever know.
 	};
 
