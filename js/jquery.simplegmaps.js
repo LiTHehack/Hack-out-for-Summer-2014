@@ -1,25 +1,23 @@
 /*
  *  Project: simplegmaps
- *	Version: 0.2.0
+ *	Version: 0.4
  *  Description: Google Maps made simple
  *  Author: Andreas Norman <an@andreasnorman.se>
  *  License: MIT
  */
-
-// the semi-colon before function invocation is a safety net against concatenated
-// scripts and/or other plugins which may not be closed properly.
-;
 (function ($, window, document, undefined) {
 
-	var pluginName = "simplegmaps",
+	var pluginName = 'simplegmaps',
 		// the name of using in .data()
-		dataPlugin = "plugin_" + pluginName,
+		dataPlugin = 'plugin_' + pluginName,
 		TravelModes = ['DRIVING', 'WALKING', 'BICYCLING'],
 		// default options
 		defaults = {
 			debug: false,
+			GeoLocation: false,
 			MapOptions: {
-				draggable: false,
+				draggable: true,
+				zoom: 8,
 				scrollwheel: false,
 				streetViewControl: false,
 				panControl: true,
@@ -33,6 +31,7 @@
 			GenericMapLink: 'http://www.google.com/maps',
 			getRouteButton: '#simplegmaps-getroute',
 			getTravelMode: '#simplegmaps-travelmode',
+			routeDirections: '#simplegmaps-directions',
 			externalLink: '#simplegmaps-external',
 			getFromAddress: '#simplegmaps-fromaddress',
 			defaultTravelMode: 'DRIVING'
@@ -56,7 +55,6 @@
 		try {
 			map.fitBounds(bounds);
 			map.setCenter(bounds.getCenter());
-			map.setZoom(map.getZoom()-2); // NOT DEFAULT
 		} catch (e) {} // Let's catch this possible error and do nothing about it. Noone will ever know.
 	};
 
@@ -68,15 +66,17 @@
 	};
 
 	var bindMapLinkButton = function (instance) {
-		var markerPosition = instance.Map.markers[0].position.toString();
-		var query = '?q=' + markerPosition;
+		if ($(instance.options.externalLink).length > 0) {
+			var markerPosition = instance.Map.markers[0].position.toString();
+			var query = '?q=' + markerPosition;
 
-		if (navigator.userAgent.toLowerCase().indexOf("android") > -1) {
-			$(instance.options.externalLink).attr('href', instance.options.AndroidMapLink + query);
-		} else if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-			$(instance.options.externalLink).attr('href', instance.options.AppleMapLink + query);
-		} else {
-			$(instance.options.externalLink).attr('href', instance.options.GenericMapLink + query);
+			if (navigator.userAgent.toLowerCase().indexOf('android') > -1) {
+				$(instance.options.externalLink).attr('href', instance.options.AndroidMapLink + query);
+			} else if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+				$(instance.options.externalLink).attr('href', instance.options.AppleMapLink + query);
+			} else {
+				$(instance.options.externalLink).attr('href', instance.options.GenericMapLink + query);
+			}
 		}
 	};
 
@@ -85,6 +85,12 @@
 		var geocoder = new google.maps.Geocoder();
 		var markers = [];
 		var mapInData = mapEl.clone();
+
+		var mapOptions = {
+			zoom: 8,
+			center: new google.maps.LatLng(-34.397, 150.644)
+		};
+
 		var map = new google.maps.Map(mapEl[0], instance.options.MapOptions); // We need [0] to get the html element instead of jQery object
 
 		mapInData.find('div.map-marker').each(function (i) {
@@ -92,9 +98,10 @@
 				var marker = new google.maps.Marker({
 					map: map,
 					title: $(this).data('title'),
-					position: parseLatLng($(this).data('latlng'))
+					position: parseLatLng($(this).data('latlng')),
+					icon: $(this).data('icon')
 				});
-				if ($(this).has("div.map-infowindow").length > 0) {
+				if ($(this).has('div.map-infowindow').length > 0) {
 					var infowindow = new google.maps.InfoWindow({
 						content: $(this).find('div.map-infowindow').parent().html()
 					});
@@ -109,13 +116,14 @@
 				geocoder.geocode({
 					'address': $(this).data('address')
 				}, function (results, status) {
-					if (status == google.maps.GeocoderStatus.OK) {
+					if (status === google.maps.GeocoderStatus.OK) {
 						var marker = new google.maps.Marker({
 							map: map,
 							title: currentMarkerData.data('title'),
-							position: results[0].geometry.location
+							position: results[0].geometry.location,
+							icon: currentMarkerData.data('icon')
 						});
-						if (currentMarkerData.has("div.map-infowindow").length > 0) {
+						if (currentMarkerData.has('div.map-infowindow').length > 0) {
 							var infowindow = new google.maps.InfoWindow({
 								content: currentMarkerData.find('div.map-infowindow').parent().html()
 							});
@@ -125,6 +133,7 @@
 						}
 
 						markers.push(marker);
+						console.log(marker);
 					}
 				});
 			}
@@ -133,15 +142,22 @@
 
 		// We need to wait for Google to locate and place all markers
 		google.maps.event.addListenerOnce(map, 'idle', function () {
-			zoomToFitBounds(map, markers);
+			if (markers.length > 0) {
+				zoomToFitBounds(map, markers);
+			} else if (!instance.options.MapOptions.center) {
+				var bounds = new google.maps.LatLngBounds();
+				map.fitBounds(bounds);
+				map.setCenter(bounds.getCenter());
+			}
 
 			//Register map and its markers to class variable
 			instance.Map = {
 				map: map,
 				markers: markers
-			}
-			if (instance.options.mapbutton) {
-				bindMapLinkButton(instance);
+			};
+			bindMapLinkButton(instance);
+			if (instance.options.GeoLocation) {
+				geoLocation(instance.Map.map);
 			}
 
 		});
@@ -151,7 +167,8 @@
 		var markers = instance.Map.markers;
 
 		instance.directionsDisplay.setMap(instance.Map.map);
-		//instance.directionsDisplay.setPanel(document.getElementById("google-map-route-directions"));
+		console.log(instance.options.routeDirections);
+		instance.directionsDisplay.setPanel($(instance.options.routeDirections)[0]);
 
 		var request = {
 			origin: from,
@@ -159,7 +176,7 @@
 			travelMode: google.maps.TravelMode[instance.currentTravelmode]
 		};
 		instance.directionsService.route(request, function (response, status) {
-			if (status == google.maps.DirectionsStatus.OK) {
+			if (status === google.maps.DirectionsStatus.OK) {
 				instance.directionsDisplay.setDirections(response);
 			}
 		});
@@ -169,7 +186,7 @@
 		var length = instance.TravelModes.length;
 		instance.currentTravelmode = instance.options.defaultTravelMode;
 		for (var i = 0; i < length; i++) {
-			if (instance.TravelModes[i] == travelmode) {
+			if (instance.TravelModes[i] === travelmode) {
 				instance.currentTravelmode = travelmode;
 			}
 		}
@@ -179,7 +196,7 @@
 		instance.directionsService = new google.maps.DirectionsService();
 		instance.directionsDisplay = new google.maps.DirectionsRenderer({
 			draggable: true
-		}),
+		});
 
 		$(instance.options.getRouteButton).on('click', function (e) {
 			e.preventDefault();
@@ -196,6 +213,71 @@
 		});
 	};
 
+	var geoLocation = function (map) {
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(function (position) {
+				var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+				map.setCenter(pos);
+			}, function () {
+				handleNoGeolocation(map, true);
+			});
+		} else {
+			// Browser doesn't support Geolocation
+			handleNoGeolocation(map, false);
+		}
+	};
+
+	var toggleTrafficLayer = function (instance) {
+		if ((instance.trafficLayer) && (instance.trafficLayer.map !== null)) {
+			instance.trafficLayer.setMap(null);
+		} else {
+			instance.trafficLayer = new google.maps.TrafficLayer();
+			instance.trafficLayer.setMap(instance.Map.map);
+		}
+	};
+
+	var toggleBicycleLayer = function (instance) {
+		if ((instance.bicycleLayer) && (instance.bicycleLayer.map !== null)) {
+			instance.bicycleLayer.setMap(null);
+		} else {
+			instance.bicycleLayer = new google.maps.BicyclingLayer();
+			instance.bicycleLayer.setMap(instance.Map.map);
+		}
+	};
+
+	var toggleWeatherLayer = function (instance) {
+		if (((instance.weatherLayer) && (instance.weatherLayer.map !== null)) || ((instance.instancecloudLayer) && (instance.instancecloudLayer.map !== null))) {
+			instance.cloudLayer.setMap(null);
+			instance.weatherLayer.setMap(null);
+		} else {
+			instance.weatherLayer = new google.maps.weather.WeatherLayer({
+				temperatureUnits: google.maps.weather.TemperatureUnit.FAHRENHEIT
+			});
+			instance.weatherLayer.setMap(instance.Map.map);
+
+			instance.cloudLayer = new google.maps.weather.CloudLayer();
+			instance.cloudLayer.setMap(instance.Map.map);
+		}
+	};
+
+	var handleNoGeolocation = function (map, errorFlag) {
+		var content;
+		if (errorFlag) {
+			content = 'Error: The Geolocation service failed.';
+		} else {
+			content = 'Error: Your browser doesn\'t support geolocation.';
+		}
+
+		var options = {
+			map: map,
+			position: new google.maps.LatLng(60, 105),
+			content: content
+		};
+
+		var infowindow = new google.maps.InfoWindow(options);
+		instance.Map.setCenter(options.position);
+	};
+
 	// The actual plugin constructor
 	var Plugin = function (element) {
 		/*
@@ -210,22 +292,52 @@
 			// extend options ( http://api.jquery.com/jQuery.extend/ )
 			$.extend(this.options, options);
 
+			// Need to parse the latlng position
+			if (this.options.MapOptions.center) {
+				this.options.MapOptions.center = parseLatLng(this.options.MapOptions.center);
+			}
+
+			// If zoom property missing, add it, or else MapOptions will fail.
+			if (!this.options.MapOptions.zoom) {
+				this.options.MapOptions.zoom = 8;
+			}
+
 			// Draw map and set markers
 			drawMap(this, this.element);
 
 			if (($(this.options.getRouteButton).length > 0) && ($(this.options.getTravelMode).length > 0)) {
 				setupRouting(this);
 			}
+
+			if ($(this.options.geoLocationButton).length > 0) {
+				var instance = this;
+				$(this.options.geoLocationButton).on('click', function (e) {
+					e.preventDefault();
+					geoLocation(this);
+				}.bind(this));
+			}
 		},
 
 		// TODO
 		getMarkers: function () {
-
+			return this.Map.map;
 		},
 
 		// TODO
 		getMap: function () {
+			return this.Map.map;
+		},
 
+		toggleWeatherLayer: function () {
+			toggleWeatherLayer(this);
+		},
+
+		toggleTrafficLayer: function () {
+			toggleTrafficLayer(this);
+		},
+
+		toggleBicycleLayer: function () {
+			toggleBicycleLayer(this);
 		},
 
 		// TODO
@@ -233,12 +345,21 @@
 
 		},
 
+		setGeoLocation: function () {
+			geoLocation(this.Map.map);
+		},
+
+		addMethod: function (newMethod) {
+			//$.tooltip.methods = $.extend($.tooltip.methods, newMethods);
+			this.extensions = $.extend(this.extensions, newMethod);
+		},
+
 
 		destroy: function () {
 			// unset Plugin data instance
 			this.element.data(dataPlugin, null);
 		}
-	}
+	};
 
 	/*
 	 * Plugin wrapper, preventing against multiple instantiations and
@@ -263,7 +384,7 @@
 		// call Plugin.init( arg )
 		if (typeof arg === 'undefined' || typeof arg === 'object') {
 
-			if (typeof instance['init'] === 'function') {
+			if (typeof instance.init === 'function') {
 				instance.init(arg);
 			}
 
