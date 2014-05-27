@@ -56,7 +56,7 @@
 							We hope you had at least half as fun as we did, because we had a blast.
 						</p>
 						<p>
-							Love,<br>
+							Green-purple love,<br>
 							Spotify Street Team LiU and LiTHehack
 						</p>
 					</div>
@@ -180,5 +180,15 @@
 
 		<!-- Scripts! -->
 		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+		jQuery(document).ready(function($) {
+			$('a[href*=#]').click(function(event){
+				event.preventDefault();
+
+				$("html, body").animate({ scrollTop: $(this.hash).offset().top }, 1000, 'swing');
+			});
+		});
+		</script>
 	</body>
 </html>
