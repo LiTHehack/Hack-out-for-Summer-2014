@@ -2,6 +2,11 @@ body, html, #wrapper {
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	font-family: 'Maven Pro', 'Helvetica', sans-serif;
+}
+
+.container {
+	max-width: 1000px;
 }
 
 #thanks {
@@ -11,26 +16,66 @@ body, html, #wrapper {
 	background-image: url('../img/group.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: scroll;
+	background-attachment: fixed;
 	background-position: center;
 	color: #fff;
+
 	display: table;
 
-	h1 {
-		-webkit-transform: rotate(-12deg);
-		transform: rotate(-12deg);
-		text-align: center;
-		padding: 0;
-		font-family: Great Vibes;
-		font-size: 12em;
-		text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-		// #position: absolute;
-		// #top: 50%;
+	.title {
 		display: table-cell;
 		vertical-align: middle;
+		text-align: center;
 
-		@media screen and(max-width:630px) {
-			font-size: 7em;
+		h1 {
+			-webkit-transform: rotate(-12deg);
+			transform: rotate(-12deg);
+			padding: 0;
+			font-family: Great Vibes;
+			font-size: 12em;
+			text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+			max-width: 80%;
+			margin: 0 auto;
+
+			@media screen and(max-width:630px) {
+				font-size: 7em;
+				-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
+			}
 		}
+
+		a {
+			letter-spacing: .15em;
+			display: inline-block;
+			padding: 10px;
+			border: 2px solid #fff;
+			color: #fff;
+			text-transform: uppercase;
+			background: transparent;
+
+			-webkit-transition: all .3s ease 0s;
+			   -moz-transition: all .3s ease 0s;
+				-ms-transition: all .3s ease 0s;
+				 -o-transition: all .3s ease 0s;
+					transition: all .3s ease 0s;
+
+			&:hover {
+				text-decoration: none;
+				background: #fff;
+				color: rgb(233, 110, 55);
+			}
+		}
+	}
+}
+
+#whathappend, #partners, #photos, #winners {
+	h1, h2, h3, h4 {
+		text-align: center;
+	}
+	h1 {
+		margin: 40px 0 25px;
+	}
+	p {
+		font-size: 15px;
 	}
 }
